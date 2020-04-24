@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
     "build": "browserify src/index.js -o src/bundle.js",
     "webpack": "webpack"
   },
@@ -14,5 +15,8 @@
     "standard": "^14.3.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.10.3"
   }
 }
