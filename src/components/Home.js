@@ -12,6 +12,9 @@ export default class Home {
     const moviesHtml = movies.render()
 
     // atualiza o index.html
-    document.querySelector('.targetflix').innerHTML = headerHtml + moviesHtml
+    // document.querySelector('.targetflix').appendChild(headerHtml)
+    // document.querySelector('.targetflix').appendChild(moviesHtml)
+
+    document.querySelector('.targetflix').append(headerHtml, moviesHtml)
   }
 }

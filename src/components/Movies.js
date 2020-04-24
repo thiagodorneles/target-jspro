@@ -1,45 +1,16 @@
+import Category from './Category'
+
+const db = require('./../db.json')
+
 export default class Movies {
   render () {
-    return `<main>
-      <section>
-          <h1>Lançamentos</h1>
+    const main = document.createElement('main')
 
-          <div class="carousel">
-              <div class="movie-card">
-                  <h2>Título do filme</h2>
-              </div>
+    for (const category of db.categories) {
+      const categoryComponent = new Category()
+      main.appendChild(categoryComponent.render(category.title))
+    }
 
-              <div class="movie-card">
-                  <h2>Título do filme</h2>
-              </div>
-
-              <div class="movie-card">
-                  <h2>Título do filme</h2>
-              </div>
-
-          </div>
-
-      </section>
-
-      <section>
-          <h1>Infantil</h1>
-
-          <div class="carousel">
-              <div class="movie-card">
-                  <h2>Título do filme</h2>
-              </div>
-
-              <div class="movie-card">
-                  <h2>Título do filme</h2>
-              </div>
-
-              <div class="movie-card">
-                  <h2>Título do filme</h2>
-              </div>
-              
-          </div>
-
-      </section>
-  </main>`
+    return main
   }
 }
