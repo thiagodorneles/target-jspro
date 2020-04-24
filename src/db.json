@@ -1,0 +1,24 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "title": "Últimos Lançamentos",
+            "movies": [
+                {
+                    "id": 1,
+                    "title": "Coringa",
+                    "imageUrl": "https://miro.medium.com/max/1200/0*sw1yR8sDcIewC3D6.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Ford vs Ferrari",
+                    "imageUrl": "https://naoseinada.com.br/wp-content/uploads/2020/01/ford_ferrari-critica-naoseinada-1024x576.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Drama"
+        }
+    ]
+}
