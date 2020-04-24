@@ -18,7 +18,14 @@
         },
         {
             "id": 2,
-            "title": "Drama"
+            "title": "Drama",
+            "movies": [
+                {
+                    "id": 1,
+                    "title": "Coringa",
+                    "imageUrl": "https://miro.medium.com/max/1200/0*sw1yR8sDcIewC3D6.jpg"
+                }
+            ]
         }
     ]
 }

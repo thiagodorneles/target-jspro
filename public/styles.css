@@ -26,12 +26,14 @@ header h1 {
     letter-spacing: 1px;
 }
 header .right {
-    justify-items: center;
+    display: flex;
+    align-items: center;
 }
 header .right a {
     text-decoration: none;
     color: #fff;
     margin-left: 5px;
+
 }
 main {
     padding: 20px;
@@ -44,14 +46,31 @@ main section {
     margin-bottom: 10px;
 }
 main section .movie-card {
-    border: 1px solid #fff;
+    border: 0px solid #fff;
     border-radius: 5px;
     padding: 10px;
     color: #fff;
     display: inline-block;
     height: 120px;
     width: 200px;
+    background-size: 100% 100%;
+    margin-right: 10px;
+    transition: ease-in all 0.2s;
+}
+main section .movie-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 main section .movie-card h2 {
     font-size: 16px;
 }
+
+.movie-details {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    background: #e3e3e3;
+}
+
