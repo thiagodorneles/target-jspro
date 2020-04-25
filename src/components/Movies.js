@@ -1,16 +1,20 @@
 import Category from './Category'
-
-const db = require('./../db.json')
+import Api from '../services/api'
 
 export default class Movies {
   render () {
     const main = document.createElement('main')
 
-    for (const category of db.categories) {
-      const categoryComponent = new Category(category.id, category.title, category.movies)
+    const api = new Api()
 
-      main.appendChild(categoryComponent.render())
-    }
+    api.getAsPromise('http://localhost:3000/categories')
+      .then(function (categories) {
+        for (const category of categories) {
+          const categoryComponent = new Category(category.id, category.title, category.movies)
+
+          main.appendChild(categoryComponent.render())
+        }
+      })
 
     return main
   }

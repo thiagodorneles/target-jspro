@@ -64,7 +64,6 @@ main section .movie-card:hover {
 main section .movie-card h2 {
     font-size: 16px;
 }
-
 .movie-details {
     position: fixed;
     top: 0;
@@ -72,5 +71,15 @@ main section .movie-card h2 {
     right: 0;
     width: 300px;
     background: #e3e3e3;
+    padding: 10px;
+    overflow-y: auto;
 }
-
+.movie-details .movie-image {
+    height: 140px;
+    width: 100%;
+}
+.movie-details .actor-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
